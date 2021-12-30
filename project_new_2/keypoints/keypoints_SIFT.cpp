@@ -32,7 +32,7 @@ void find_keypoints_SIFT(Mat input_image, Mat second_intput_image) {
 
 		siftPtr->detectAndCompute(input_image, noArray(), keypoints1, descriptors_1);
 		siftPtr->detectAndCompute(second_intput_image, noArray(), keypoints2, descriptors_2);
-		//
+		////
 		FlannBasedMatcher matcher3;
 		vector< vector<DMatch> > knn_matches;
 		matcher3.knnMatch(descriptors_1, descriptors_2, knn_matches, 2);
