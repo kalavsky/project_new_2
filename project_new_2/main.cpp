@@ -119,8 +119,8 @@ int main()
 	vector<Vec4i> hierarchy, hierarchy2;
 	RotatedRect rect2;
 
-	Mat image_in = imread("picture1.jpg");
-	Mat image_in2 = imread("picture2.jpg");
+	Mat image_in = imread("picture01.jpg");
+	Mat image_in2 = imread("picture02.jpg");
 
 
 
@@ -138,7 +138,7 @@ int main()
 	//find_keypoints(image_in, image_in2);
 	//homography(image_in, image_in2);
 
-
+	//	find_contours(image_in, image_in2);
 
 
 	/*

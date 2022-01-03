@@ -129,7 +129,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="contours\countours.cpp" />
     <ClCompile Include="draw_keypoints\draw_keypoints.cpp" />
+    <ClCompile Include="epipolar\epipolar.cpp" />
     <ClCompile Include="header\Header.cpp" />
     <ClCompile Include="homography\homography.cpp" />
     <ClCompile Include="joined_images\joined_images.cpp" />
@@ -137,6 +139,7 @@
     <ClCompile Include="keypoints\keypoints_ORB.cpp" />
     <ClCompile Include="keypoints\keypoints_SIFT.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="match_points\match_points.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\Header.h" />

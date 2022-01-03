@@ -50,6 +50,14 @@ void find_keypoints_ORB(Mat input_image, Mat second_intput_image) {
 	OrbPtr->detectAndCompute(input_image, noArray(), keypoints1, descriptors_1);
 	OrbPtr->detectAndCompute(second_intput_image, noArray(), keypoints2, descriptors_2);
 
+	// Add results to image and save.
+	cv::Mat output1, output2;
+	cv::drawKeypoints(input_image, keypoints1, output1);
+	cv::drawKeypoints(second_intput_image, keypoints2, output2);
+	//cv::imwrite("sift_result.jpg", output1);
+	imshow("ORB_result.jpg", output1);
+	imshow("ORB_result2.jpg", output2);
+
 
 	vector<Point2f> kp1Local, kp2Local;
 	KeyPoint::convert(keypoints1, kp1Local);
@@ -181,13 +189,7 @@ void find_keypoints_ORB(Mat input_image, Mat second_intput_image) {
 
 
 	*/
-	// Add results to image and save.
-	cv::Mat output1, output2;
-	cv::drawKeypoints(input_image, keypoints1, output1);
-	cv::drawKeypoints(second_intput_image, keypoints2, output2);
-	//cv::imwrite("sift_result.jpg", output1);
-	imshow("sift_result.jpg", output1);
-	imshow("sift_result2.jpg", output2);
+	
 
-
+	match_points(descriptors_1, descriptors_2, keypoints1, keypoints2, input_image, second_intput_image);
 }

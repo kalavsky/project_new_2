@@ -39,6 +39,15 @@
     <ClCompile Include="keypoints\keypoints_ORB.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="match_points\match_points.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="contours\countours.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="epipolar\epipolar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\Header.h">
