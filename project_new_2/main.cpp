@@ -119,9 +119,10 @@ int main()
 	vector<Vec4i> hierarchy, hierarchy2;
 	RotatedRect rect2;
 
-	Mat image_in = imread("picture01.jpg");
-	Mat image_in2 = imread("picture02.jpg");
-
+	//Mat image_in = imread("picture01.jpg");
+	//Mat image_in2 = imread("picture02.jpg");
+	Mat image_in = imread("picture1.jpg");
+	Mat image_in2 = imread("picture2.jpg");
 
 
 

@@ -100,7 +100,7 @@ void match_points(Mat descriptors_1, Mat descriptors_2, vector<cv::KeyPoint> key
 }
 
 
-void match_points_SIFT(Mat descriptors_1, Mat descriptors_2, vector<cv::KeyPoint> keypoints1, vector<cv::KeyPoint>  keypoints2, Mat input_image, Mat second_intput_image) {
+void match_points_SIFT(Mat output1, Mat descriptors_1, Mat descriptors_2, vector<cv::KeyPoint> keypoints1, vector<cv::KeyPoint>  keypoints2, Mat input_image, Mat second_intput_image) {
 
 
 	FlannBasedMatcher matcher3;
@@ -129,6 +129,11 @@ void match_points_SIFT(Mat descriptors_1, Mat descriptors_2, vector<cv::KeyPoint
 	drawMatches(input_image, keypoints1, second_intput_image, keypoints2, good_matches2, matched3, Scalar::all(-1), Scalar::all(-1), std::vector<char>(), DrawMatchesFlags::DEFAULT);
 	//cv::line(matched, myPoints_number[0], myPoints_letter[0], cv::Scalar(0, 0, 255), 2);
 	imshow("matched3", matched3);
+
+
+
+
+
 	
 	/*
 	// Sort matches by score

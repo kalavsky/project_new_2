@@ -44,7 +44,7 @@ void find_keypoints_SIFT(Mat input_image, Mat second_intput_image) {
 		imshow("sift_result2.jpg", output2);
 		
 		
-		match_points_SIFT(descriptors_1 , descriptors_2, keypoints1, keypoints2, input_image, second_intput_image);
+		match_points_SIFT(output1, descriptors_1 , descriptors_2, keypoints1, keypoints2, input_image, second_intput_image);
 
 		
 }
